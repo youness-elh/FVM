@@ -1,0 +1,5 @@
+set logscale xy
+plot 'error.dat' using 1:2 with line
+plot 'error.dat' using 1:2 w lp pt 7 title "wnum",\
+     'er.dat' using 1:3 w l title "wex"
+pause -1

@@ -1,0 +1,9 @@
+set title "Erreur L^1 de la méthode de Godunov en fonction du pas \Delta_x pour l'équation de Burgers -  Echelle logarithmique"
+set xlabel "Delta_x"
+set ylabel "erreur"
+set logscale x
+set logscale y
+
+plot 'error.dat' using 1:2 with line title "Erreur L1"
+
+pause -1

@@ -1,0 +1,7 @@
+set title "La validation du solveur de Riemann pour Saint-Senant"
+set grid xtics ytics
+
+plot 'riem.dat' using 1:2 w lp title "h", \
+     'riem.dat' using 1:3 w l title "u"
+
+pause -1

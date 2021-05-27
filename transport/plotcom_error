@@ -1,0 +1,12 @@
+set title "Erreur L^1 de la méthode de Godunov en fonction du pas \Delta_x pour l'équation de Burgers -  Echelle logarithmique"
+set xlabel "Delta_x"
+set ylabel "erreur"
+set logscale x
+set logscale y
+set format y "%.0te%+03T"
+
+f(x) = a*x + b
+
+fit f(x) "godu_error.dat" using (log($1)):(log($2)) via a,b
+
+plot "godu_error.dat" using 1:2 title "erreur" with points,  exp(f(log(x))) title sprintf("ordre estimé : %f", a) lt rgb "red"

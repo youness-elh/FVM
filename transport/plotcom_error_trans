@@ -1,0 +1,9 @@
+set title "Erreur L^1 de la méthode de Godunov en fonction de N -  Echelle logarithmique"
+set xlabel "N"
+set ylabel "erreur"
+set logscale x
+set logscale y
+
+
+
+plot "godu_error.dat" using 1:2 title "erreur"

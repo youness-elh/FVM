@@ -1,0 +1,4 @@
+set logscale xy
+plot 'error.dat' using 1:2 with line
+
+pause -1

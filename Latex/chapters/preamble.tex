@@ -1,0 +1,91 @@
+\usepackage{import}
+\setcounter{tocdepth}{4}
+\addtolength{\textwidth}{2 cm}
+\addtolength{\textheight}{3 cm}
+%\usepackage[latin1]{inputenc}
+%\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{textcomp}
+\usepackage{amsmath,amssymb,amsfonts,mathrsfs}
+\usepackage{bm}
+\usepackage{color, xcolor,epic,eepic,multicol,graphicx}
+%\usepackage[T1]{fontenc}
+\usepackage{pstricks, pstricks-add}
+%\usepackage[all]{xy}
+%\usepackage[frenchb]{babel}
+\usepackage{ulem, listings, ccaption}
+\usepackage[framed,amsmath,thmmarks]{ntheorem}
+\usepackage{pgfgantt}
+\theoremheaderfont{\upshape \bfseries}
+\theoremseparator{:} 
+
+\newcommand{\prodscal}[2]{\left\langle#1,#2\right\rangle}
+\newcommand{\gs}[1]{\textbf{\underline{#1}}}
+
+\newtheorem{defi}{Définition}[section]
+\newcommand{\defin}[1]{\begin{defi}#1\end{defi}\vspace{0.3cm}}
+\newcommand{\defibox}[1]{\hspace{-0.7cm}\fbox{\begin{minipage}{14cm}\begin{defi}#1\end{defi}\end{minipage}}\vspace{0.3cm}}
+\renewcommand{\thedefi}{\empty{}} 
+
+\newtheorem{defis}{Définitions}[section]
+\newcommand{\defins}[1]{\begin{defis}#1\end{defis}\vspace{0.3cm}}
+\newcommand{\defisbox}[1]{\hspace{-0.7cm}\fbox{\begin{minipage}{14cm}\begin{defis}
+#1\end{defis}\end{minipage}}\vspace{0.3cm}}
+\renewcommand{\thedefis}{\empty{}} 
+
+\newtheorem{theo}{Théorème}[section]
+\newcommand{\theor}[1]{\begin{theo}#1\end{theo}\vspace{0.3cm}}
+\newcommand{\theobox}[1]{\hspace{-0.7cm}\fbox{\begin{minipage}{14cm}\begin{theo}
+#1\end{theo}\end{minipage}}\vspace{0.3cm}}
+
+\newtheorem{propr}[theo]{Propriété}
+\newcommand{\propri}[1]{\begin{propr}#1\end{propr}\vspace{0.3cm}}
+\newcommand{\proprbox}[1]{\hspace{-0.7cm}\fbox{\begin{minipage}{14cm}\begin{propr}
+#1\end{propr}\end{minipage}}\vspace{0.3cm}}
+
+\newtheorem{proprs}[theo]{Propriétés}
+\newcommand{\propris}[1]{\begin{proprs}#1\end{proprs}\vspace{0.3cm}}
+\newcommand{\proprsbox}[1]{\hspace{-0.7cm}\fbox{\begin{minipage}{14cm}\begin{proprs}
+#1\end{proprs}\end{minipage}}\vspace{0.3cm}}
+
+\newtheorem{propo}[theo]{Proposition}
+\newcommand{\propos}[1]{\begin{propo}#1\end{propo}\vspace{0.3cm}}
+\newcommand{\propobox}[1]{\hspace{-0.7cm}\fbox{\begin{minipage}{14cm}\begin{propo}
+#1\end{propo}\end{minipage}}\vspace{0.3cm}}
+
+\newtheorem{lemm}[theo]{Lemme}
+\newcommand{\lemme}[1]{\begin{lemm}#1\end{lemm}\vspace{0.3cm}}
+\newcommand{\lemmbox}[1]{\hspace{-0.7cm}\fbox{\begin{minipage}{14cm}\begin{lemm}
+#1\end{lemm}\end{minipage}}\vspace{0.3cm}} 
+
+\newtheorem{corr}[theo]{Corollaire}
+\newcommand{\corro}[1]{\begin{corr}#1\end{corr}\vspace{0.3cm}}
+\newcommand{\corrbox}[1]{\hspace{-0.7cm}\fbox{\begin{minipage}{14cm}\begin{corr}
+#1\end{corr}\end{minipage}}\vspace{0.3cm}}
+\everymath{\displaystyle}
+\newtheorem{affi}{Affirmation}
+\newtheorem{rema}{Remarque}
+
+%macro for equations with symbols
+\newcommand{\equaframe}[2]{\begin{flalign*}&& #1 && #2\end{flalign*}}
+%macro for triplebar matrix norm
+\newcommand{\triplebarre}[1]{\Vert\hspace{-.1em}| #1 \Vert\hspace{-.1em}|}
+%norm
+\newcommand{\norm}[1]{\lVert{#1}\rVert}
+
+\newrgbcolor{fftttt}{1 0.2 0.2}
+\newrgbcolor{ttffqq}{0.2 1 0}
+\psset{xunit=9.62cm,yunit=2.27cm,algebraic=true,dotstyle=o,dotsize=3pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
+\renewcommand{\contentsname}{Table of contents}
+%\setlength{\unitlength}{1cm}
+\graphicspath{Images_Fichiers}
+\setlength{\parskip}{.3cm}
+\everymath{\displaystyle}
+\lstset{language=C++,
+                basicstyle=\ttfamily,
+                keywordstyle=\color{blue}\ttfamily,
+                stringstyle=\color{red}\ttfamily,
+                commentstyle=\color{green}\ttfamily,
+                morecomment=[l][\color{magenta}]{\#}
+}
+
